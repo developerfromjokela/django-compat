@@ -43,7 +43,7 @@ except ImportError:
     from six.moves._thread import get_ident  # noqa
 
 try:
-    from django.conf.urls import url, include, handler404, handler500
+    from django.conf.urls import re_path, include, handler404, handler500
 except ImportError:
     from django.conf.urls.defaults import url, include, handler404, handler500  # pyflakes:ignore
 
